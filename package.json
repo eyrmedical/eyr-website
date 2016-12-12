@@ -1,0 +1,9 @@
+{
+  "name": "eyrmd",
+  "dependencies": {
+    "list": "latest"
+  },
+  "scripts": {
+    "start": "list ./"
+  }
+}

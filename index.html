@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="nb">
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Eyr - Videokonsultasjon med lege</title>
+    <!-- SEO -->
+    <meta name="description" content="Konsultasjoner med leger over video. Logg inn med BankID, bestill time og snakk med legen på iPhone eller i nettleseren din">
+    <meta name="keywords" content="lege, konsultasjoner, video, telemedisin, legetime">
+    <meta property="og:image" content="http://eyr.md/images/banner.jpg">
+    <meta property="og:description" content="Ta legetimen på iPhone eller i nettleseren din.">
+    <meta property="og:title" content="Eyr - videokonsultasjon med lege på nett">
+    <meta name="apple-itunes-app" content="app-id=1106406058" app-argument="eyr.md">
+
+      <link rel="alternate" hreflang="en" href="git push -u origin master/en/" />
+
+    <!-- jQuery -->
+    <script src="/javascripts/jquery-1.12.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Open Sans -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Entypo Icons -->
+    <link rel="stylesheet" href="/fonts/entypo/entypo.min.css">
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="/javascripts/all.js"></script>
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="images/favicons/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicons/favicon-32x32.png" sizes="32x32">
+    <meta name="msapplication-TileColor" content="#27374a">
+    <meta name="msapplication-TileImage" content="images/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="images/favicons/browserconfig.xml">
+
+  </head>
+
+  <body class="index">
+      <nav class='navigation'>
+  <div class='navigation-container'>
+    <div class='navigation-header'>
+      <a href='/' id='eyr-logo'>
+        <svg height='100%' viewbox='0 0 250 250' width='100%'>
+          <g fill-rule='evenodd' fill='none' id='logo_frame' stroke-width='1' stroke='none'>
+            <g fill='currentColor' id='logo_icon_square'>
+              <g id='logo_pattern'>
+                <path d='M106.25361,170.46075 L106.25361,137.529305 L64.4975124,96.3964325 L64.4975124,71 L82.8826599,71 L82.8826599,89.5409538 L115.60199,122.260284 L148.009708,89.5409538 L148.009708,71 L166.239049,71 L166.239049,96.3964325 L124.482951,137.373498 L124.482951,170.301678 C127.505292,172.859612 129.423725,176.678497 129.423725,180.944871 C129.423725,188.646411 123.172229,194.889743 115.460619,194.889743 C107.749008,194.889743 101.497512,188.646411 101.497512,180.944871 C101.497512,176.766054 103.338011,173.016547 106.25361,170.46075 Z M0,20.0086422 C0,8.95817426 8.94568228,0 20.0086422,0 L209.991358,0 C221.041826,0 230,8.94568228 230,20.0086422 L230,209.991358 C230,221.041826 221.054318,230 209.991358,230 L20.0086422,230 C8.95817426,230 0,221.054318 0,209.991358 L0,20.0086422 Z M157.498352,61.9677224 C164.678517,61.9677224 170.499191,56.1546497 170.499191,48.9838612 C170.499191,41.8130727 164.678517,36 157.498352,36 C150.318187,36 144.497512,41.8130727 144.497512,48.9838612 C144.497512,56.1546497 150.318187,61.9677224 157.498352,61.9677224 Z M72.4983519,61.9677224 C79.6785172,61.9677224 85.4991913,56.1546497 85.4991913,48.9838612 C85.4991913,41.8130727 79.6785172,36 72.4983519,36 C65.3181865,36 59.4975124,41.8130727 59.4975124,48.9838612 C59.4975124,56.1546497 65.3181865,61.9677224 72.4983519,61.9677224 Z'></path>
+              </g>
+            </g>
+          </g>
+        </svg>
+        <span class='logo-text'>EYR</span>
+      </a>
+    </div>
+    <ul>
+      <li class='{}'>
+        <a href="/about">Om oss</a>
+      </li>
+      <li class='hidden-xs hidden-sm'>
+        <a href="https://app.eyrmedical.com">Logg inn</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      <section id='intro'>
+  <div id='intro-container'>
+    <div id='intro-text'>
+      <h1>
+        Den korteste veien til legen
+      </h1>
+      <h3>
+        Konsultasjon over video - kr 350,-
+      </h3>
+    </div>
+    <div id='intro-buttons'>
+      <a id="intro-cta" class="hidden-sm hidden-xs" href="https://app.eyrmedical.com">Snakk med lege nå</a>
+      <a target="_blank" href="https://itunes.apple.com/no/app/eyr-konsultasjon-med-lege/id1106406058?l=nb&amp;mt=8"><img alt="Last ned på Apple App Store" id="app_store_badge" src="/images/app_store_badge_nb.svg" />
+      </a>
+    </div>
+    <div id='android'>
+      Android app coming soon
+    </div>
+  </div>
+</section>
+<section id='partners'>
+  <h3>Partnere</h3>
+  <a href="/storebrand/"><img alt="Storebrand" src="/images/storebrand.svg" /></a>
+  <a target="_blank" href="http://ckms.no"><img alt="Colosseumklinikken Medisinske Senter" src="/images/ckms.svg" /></a>
+  <a target="_blank" href="https://www.simula.no/simula-innovation"><img alt="Simula" id="simula_innovation" src="/images/simula.svg" /></a>
+</section>
+
+    <main>
+      <section id='home-123'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0'>
+        <div class='home-123'>
+          <h2>1</h2>
+          <h4>
+            <span class='icon icon-key'></span>
+            Logg inn med BankID
+          </h4>
+        </div>
+      </div>
+      <div class='col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0'>
+        <div class='home-123'>
+          <h2>2</h2>
+          <h4>
+            <span class='icon icon-credit-card'></span>
+            Bestill time og betal
+          </h4>
+        </div>
+      </div>
+      <div class='col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0'>
+        <div class='home-123'>
+          <h2>3</h2>
+          <h4>
+            <span class='icon icon-video-camera'></span>
+            Snakk med lege over video
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id='index-treatment'>
+  <div id='index-treatment-inner'>
+    <div id='index-treatment-text'>
+      <h1>
+        Hva kan legen behandle?
+      </h1>
+      <p class='lead'>
+        En stor andel av legekonsultasjonene som tidligere foregikk på et legekontor kan gjøres raskere og enklere over video.<br><br> Du kan få resepter på visse typer medisiner, sykemelding, henvisning til spesialist, eller svar på spørsmål om mange forskjellige symptomer og sykdommer.
+      </p>
+      <a class="btn btn-outline btn-primary" href="/treatment">Se oversikt</a>
+    </div>
+  </div>
+</section>
+<section id='home-storebrand'>
+  <div class='container'>
+    <img src="/images/storebrand.svg" />
+    <div id='home-storebrand-text'>
+      <h2 class='m-b'>Har du Storebrand Helseforsikring?</h2>
+      <p class='lead m-y'>
+        Hvis tema for konsultasjonen er dekket av din forsikring kan du bestille gratis legetime på Eyr. Alt du trenger å gjøre er å logge inn med BankID og legge til ditt polisenummer, så er du klar til å bestille time!
+      </p>
+      <div class='m-t-lg'>
+        <a class="btn btn-primary m-r m-b" href="https://app.eyrmedical.com">Snakk med lege nå</a>
+        <a class="btn btn-primary-outline m-b" href="/storebrand/">Sjekk hva som er dekket</a>
+      </div>
+    </div>
+  </div>
+</section>
+<section id='home-more-info'>
+  <div class='container'>
+    <div class='row text-center'>
+      <div class='col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0'>
+        <div class='text-primary'>
+          <span class='icon icon-shield icon-lg'></span>
+        </div>
+        <h3>En sikker løsning</h3>
+        <p>Tjenesten bygges for å tilfredsstille kravene i Norm for informasjonssikkerhet i helse- og omsorgstjenesten. Du logger inn med BankID.</p>
+        <div class='div-md-t visible-xs visible-sm'></div>
+      </div>
+      <div class='col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0'>
+        <div class='text-primary'>
+          <span class='icon icon-medal icon-lg'></span>
+        </div>
+        <h3>Dyktige leger</h3>
+        <p>Legene du møter hos oss er de samme som du møter som fastlege eller på et sykehus.</p>
+        <div class='div-md-t visible-xs visible-sm'></div>
+      </div>
+      <div class='col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0'>
+        <div class='text-primary'>
+          <span class='icon icon-emoji-happy icon-lg'></span>
+        </div>
+        <h3>Brukervennlig</h3>
+        <p>Vi har laget en enkel og brukervennlig løsning, som er tilgjengelig på mobiltelefon, nettbrett eller nettleser.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id='bottom-cta'>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-4 col-md-offset-4'>
+        <a class="btn btn-block btn-lg btn-primary btn-pill hidden-sm hidden-xs" href="https://app.eyrmedical.com">Logg inn</a>
+        <a target="_blank" class="visible-sm visible-xs text-center" href="https://itunes.apple.com/no/app/eyr-konsultasjon-med-lege/id1106406058?l=nb&amp;mt=8"><img alt="Last ned på Apple App Store" id="app_store_badge" src="/images/app_store_badge_nb.svg" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+      <footer>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-xs-12 col-sm-6 col-md-3'>
+        <ul>
+          <li><a href="/treatment">Hva kan legen behandle?</a></li>
+          <li><a href="/faq">Ofte stilte spørsmål</a></li>
+          <li class='divider hidden-xs' role='divider'></li>
+          <li><a href="https://app.eyrmedical.com">Opprett konto</a></li>
+        </ul>
+        <div class='div-sm-t visible-sm'></div>
+      </div>
+      <div class='col-xs-12 col-sm-6 col-md-3'>
+        <ul>
+          <li><a href="/about">Om oss</a></li>
+          <li><a href="/career">Karriere</a></li>
+          <li class='divider hidden-xs' role='divider'></li>
+          <li><a href="/support">Support</a></li>
+          <!-- /%li= link_to t(:fitmetrics), path("/fitmetrics") -->
+          <li class='divider' role='divider'></li>
+        </ul>
+        <div class='div-sm-t visible-sm'></div>
+      </div>
+      <div class='col-xs-12 col-sm-6 col-md-3'></div>
+      <div class='col-xs-12 col-sm-6 col-md-3'>
+        <ul>
+          <li class='visible-xs divider' role='divider'></li>
+          <li class='list-header'>Eyr Medical AS</li>
+          <li class='list-text'>org nr: 915 487 467</li>
+          <li class='divider' role='divider'></li>
+          <li class='list-text'>
+            <span class='icon icon-phone'></span>
+            +47 932 09 995
+          </li>
+          <li class='list-text'>c/o Simula Innovation AS</li>
+          <li class='list-text'>Martin Linges vei 25</li>
+          <li class='list-text'>
+            1364
+            Oslo
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </body>
+
+  
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-62809728-1', 'auto');
+	  ga('send', 'pageview');
+	</script>
+</html>
